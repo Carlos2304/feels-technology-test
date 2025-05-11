@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import baseIcon from '@/components/base-icon/base-icon.vue';
 import { ref, watch } from 'vue';
 import { RouterLink } from 'vue-router';
@@ -68,7 +68,7 @@ const changeExpansive = () => {
     isExpansive.value = !isExpansive.value
 }
 
-const changeRoute = (r, url) => {
+const changeRoute = (r: any, url: any) => {
     routeStore.setRouteId(r, url)
 }
 

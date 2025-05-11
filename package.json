@@ -1,15 +1,17 @@
 {
-  "name": "enginer-project",
-  "version": "0.0.0",
+  "name": "engine-project",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "serve": "vue-cli-service serve",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "pinia": "^3.0.1",

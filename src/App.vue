@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import headerView from './views/header-view.vue';
-import sidebarView from './views/sidebar-view.vue';
+import sidebarLayout from './components/layout/sidebar/sidebar-layout.vue';
 import footerView from './views/footer-view.vue';
 </script>
 
@@ -9,7 +9,7 @@ import footerView from './views/footer-view.vue';
   <div class="app__wrapper">
     <header-view></header-view>
     <div class="app__main-wrapper">
-      <sidebar-view />
+      <sidebar-layout />
       <div class="app__main-content">
         <router-view />
       </div>
